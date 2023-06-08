@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+header
+{
+    height: 150px;
+    width: 100%;
+    background-color: green
+}
+section
+{
+    height: 400px;
+    width: 70%;
+    background-color: grey;
+}
+
+aside
+{
+    height: 400px;
+    width: 30%;
+    background-color: yellow;
+}
+.a 
+{
+    display: flex;
+}
+footer
+{
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+}
+nav{
+    text-align: center;
+    border-radius: 5px;
+}
+nav a{
+    text-decoration: none;
+    padding: 13px 28px;
+    display: inline-block;
+    margin: 15px;
+    font-family: ;
+    background-color: white;
+    color: black;
+    margin-right: -2px;
+    margin-left: -2px;
+    padding: 15px;
+}
+nav a:hover{
+    background-color: blue;
+    color: white;
+    transition: 0.6s; 
+    font-size: 17px;
+}
+.g input:hover{
+    transition: 0.6s;
+    background-color: violet;
+}
+
+
+
+    </style>
+</head>
+<body style="text-align: center;">
+
+
+    <fieldset>
+
+        <header><h2>Header</h2>
+                <nav>
+                    <a href="">ACCEUIL</a>
+                    <a href="">ACTUALITY</a>
+                    <a href="">CONTACTS</a>
+                </nav>
+        </header>
+
+
+        <div class="a">
+            <section style="text-align: center;"><h2>Section</h2>
+                <form action=""> <h1>FORMULAIRE</h1>
+
+                    <p>NOM: <input type="text" name="nom" id="nom" value="" required="required"></p>
+                    <label for="NOM"></label>
+
+                    <p>Prenoms: <input type="text" name="prenom" ></p>
+                    <label for="prenom"></label>
+
+                    <p>Sexe : <select name="sexe" id="">
+                        <optgroup>
+                            <option value="Masculin">Masculin</option>
+                            <option value="Feminin">Feminin</option>
+                        </optgroup>
+                    </select></p>
+                   
+                    <p><label for="Daltonien"></label> Daltonien: OUI <input type="radio" value="" id="Daltonien" name="Daltonien" checked="checked"> NON <input type="radio" id="Daltonien" value="" name="Daltonien" checked="checked"></p>
+
+                    <p>Sport : 
+                       Basketball <input type="checkbox" name="Basketball" id="Basketball">
+                       <label for="Basketball"></label>
+
+                       Football <input type="checkbox" name="Football" id="Football">
+                       <label for="Football"></label>
+
+                       Tennis <input type="checkbox" name="Tennis" id="Tennis">
+                       <label for="Tennis"></label>
+                    </p>
+
+                    <p class="g"><input type="submit" value="ANNULER">  <input type="reset" value="ENREGISTRER"></p>
+                </form>
+
+            </section>
+            <aside style="text-align: center;"><h2>Aside</h2></aside>
+        </div>
+        <footer style="text-align: center;"><h2>Footer</h2></footer>
+    </fieldset>
+</body>
+</html>-
